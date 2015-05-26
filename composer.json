@@ -1,0 +1,13 @@
+{
+    "name": "fitiwizz/php-pay-pal",
+    "description": "Fork of drewjoh/phpPayPal with composer.json",
+    "type": "library",
+    "license": "Apache 2.0",
+    "authors": [
+        {
+            "name": "Rémi Garcia",
+            "email": "fitiwizz@gmail.com"
+        }
+    ],
+    "require": {}
+}
