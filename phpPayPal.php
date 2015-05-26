@@ -1684,8 +1684,11 @@ class phpPayPal {
 		elseif(strtoupper($this->Response["ACK"]) == 'SUCCESS' OR strtoupper($this->Response["ACK"]) == 'SUCCESSWITHWARNING')
 		{
 			/* Take the response variables and put them into the local class variables */
-			foreach($this->ResponseFieldsArray[$response_type] as $key => $value)
-				$this->$key = $this->Response[$value];
+			foreach($this->ResponseFieldsArray[$response_type] as $key => $value) {
+				if(isset($this->Response[$value])) {
+					$this->$key = $this->Response[$value];
+				}
+			}
 			
 			return true;
 		}
