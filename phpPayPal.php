@@ -1,5 +1,7 @@
 <?php
 
+namespace phpPayPal;
+
 /*
 	Created by Drew Johnston, 2007, drewjoh.com
 	
